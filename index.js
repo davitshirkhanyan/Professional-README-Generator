@@ -1,6 +1,7 @@
 // Global variables
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown.js")
 
 // user input questions
 const questions = [
@@ -84,14 +85,17 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license should your project have?',
-        choices: ['afl-3.0', 'apache-2.0', 'artistic-2.0', 
-        'bsl-1.0', 'bsd-2-clause', 'bsd-3-clause', 
-        'bsd-3-clause-clear', 'cc', 'cc0-1.0', 'cc-by-4.0', 
-        'cc-by-sa-4.0', 'wtfpl', 'ecl-2.0', 'epl-1.0', 
-        'epl-2.0', 'eupl-1.1', 'agpl-3.0', 'gpl', 'gpl-2.0',
-        'gpl-3.0', 'lgpl', 'lgpl-2.1', 'lgpl-3.0', 'isc', 
-        'lppl-1.3c', 'ms-pl', 'mit', 'mpl-2.0', 'osl-3.0', 
-        'postgresql', 'ofl-1.1', 'ncsa', 'unlicense', 'zlib']
+        choices: [
+        'MIT',
+        'Unlicense',
+        'Apache 2.0',
+        'GNU LGPLv3',
+        'GNU GPLv3',
+        'GNU AGPLv3',
+        'BSD 3-Clause',
+        'Mozilla Public License 2.0',
+        'Boost Software License 1.0'
+    ]
     },
 
     // Test for project
@@ -110,3 +114,10 @@ const questions = [
         message: 'Explain how users can contribute to your project'
     }
 ];
+
+// add function to prompt user inputs
+const promptUser = () => {
+    return inquirer.prompt(questions);
+}
+
+promptUser();
