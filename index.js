@@ -103,4 +103,10 @@ const questions = [
         default: 'npm run test'
     },
 
+    // Contributing to Project
+    {
+        type: 'input',
+        name: 'contribute',
+        message: 'Explain how users can contribute to your project'
+    }
 ];
