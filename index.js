@@ -47,7 +47,32 @@ const questions = [
                 return false;
             }
         } 
-    }
+    },
+
+    // Project Description
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Provide a description of the project (Required)',
+        validate: projectDescription => {
+            if (projectDescription) {
+                return true;
+            } else {
+                console.log ('Please describe your project!');
+                return false;
+            }
+        } 
+    },
+
+    // Project Installation
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What command should be run to install dependencies?',
+        default: 'npm i'
+    },
+
+
 
 
 ];
