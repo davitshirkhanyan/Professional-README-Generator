@@ -1,5 +1,5 @@
 // markdown links to license images
-const licenseLinks = {
+const licenseBadgeLinks = {
     "MIT": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
     "Unlicense": "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)",
     "Apache 2.0": "[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
@@ -13,56 +13,61 @@ const licenseLinks = {
 
 // function to generate markdown for README
 const generateMarkdown = data => {
-    data.licenseBadge = data.licenseLinks[data.license];
+    data.licenseBadge = licenseBadgeLinks[data.license];
 
     // return markdown content
     return `
-    # ${data.title}
-    ${data.licenseBadge}
+# ${data.title}
+${data.licenseBadge}
+[![Badge for GitHub](https://img.shields.io/github/languages/top/${data.username}/${data.repository}?style=flat&logo=appveyor)](https://${data.username}.github.io/${data.repository})
 
-    ## Description
-    ${data.description}
 
-    ## Table of Contents
+## Description
+${data.description}
 
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
     
-    ## Installation
+## Installation
 
-    ${data.installation}
+${data.installation}
 
-    ## Usage
+## Usage
 
-    ${data.usage}
+${data.usage}
 
-    ## License
+## License
 
-    This repository is licensed under the ${data.license} license.
+This repository is licensed under the ${data.license} license.
 
-    ## Tests
+## Tests
 
-    To run tests, run the following:
-    \`
-    ${data.test}
-    \`
+To run tests, run the following:
+\
+${data.test}
+\
 
-    ## Website
+## Website
 
-    (https://github.io/${data.username}/${data.repository})
+https://${data.username}.github.io/${data.repository}
 
-    ## Contributing
+![Professional-README-Generator](https://user-images.githubusercontent.com/74809116/107938175-cf7fa480-6f39-11eb-9fb7-e8299bebf731.gif)
 
-    ${data.contribute}
+## Contribution
 
-    ## Questions
+${data.contribute}
 
-    Questions about this repository? Please contact me at [${data.email}](mailto:${data.email}). 
-    View more of my work in GitHub at [@${data.username}](https://github.com/${data.username})
+## Questions
 
-    `; 
+Questions about this repository? Please contact me at [${data.email}](mailto:${data.email}). 
+View more of my work in GitHub at [@${data.username}](https://github.com/${data.username})
+`; 
 };
+
+module.exports = generateMarkdown;
