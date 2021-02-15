@@ -17,5 +17,22 @@ const questions = [
                 return false;
             }
         }
-    }
+    },
+
+    // GitHub Repository
+    {
+        type: 'input',
+        name: 'repository',
+        message: 'Enter your GitHub Repository Name (Required)',
+        validate: githubRepository => {
+            if (githubRepository) {
+                return true;
+            } else {
+                console.log ('Please, enter your Github Repository Name!');
+                return false;
+            }
+        }
+    },
+
+    
 ];
