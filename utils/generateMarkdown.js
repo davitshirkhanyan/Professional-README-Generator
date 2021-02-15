@@ -30,8 +30,9 @@ ${data.description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
 * [Tests](#tests)
+* [Website](#website)
+* [Contribution](#contribution)
 * [Questions](#questions)
     
 ## Installation
@@ -56,8 +57,6 @@ ${data.test}
 ## Website
 
 https://${data.username}.github.io/${data.repository}
-
-![Professional-README-Generator](https://user-images.githubusercontent.com/74809116/107938175-cf7fa480-6f39-11eb-9fb7-e8299bebf731.gif)
 
 ## Contribution
 
