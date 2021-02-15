@@ -37,7 +37,8 @@ npm run test
 
 https://davitshirkhanyan.github.io/Professional-README-Generator
 
-![Professional-README-Generator](https://user-images.githubusercontent.com/74809116/107938175-cf7fa480-6f39-11eb-9fb7-e8299bebf731.gif)
+![ggh](https://user-images.githubusercontent.com/74809116/107941143-1d96a700-6f3e-11eb-806e-883499db7589.gif)
+
 
 ## Contribution
 
