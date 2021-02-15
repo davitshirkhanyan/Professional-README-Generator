@@ -94,4 +94,13 @@ const questions = [
         'postgresql', 'ofl-1.1', 'ncsa', 'unlicense', 'zlib']
     },
 
+    // Test for project
+
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Provide tests for project, and explain how to test',
+        default: 'npm run test'
+    },
+
 ];
