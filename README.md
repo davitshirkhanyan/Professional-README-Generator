@@ -1,6 +1,6 @@
 
 # Professional README Generator
-[![License: GNU LGPLv3](https://img.shields.io/badge/license-lgplv3-blueviolet.svg)](https://choosealicense.com/licenses/lgpl-3.0)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 [![Badge for GitHub](https://img.shields.io/github/languages/top/davitshirkhanyan/Professional-README-Generator?style=flat&logo=appveyor)](https://davitshirkhanyan.github.io/Professional-README-Generator)
 
 
@@ -26,7 +26,7 @@ Run the following command and answer the prompted questions: node index
 
 ## License
 
-This repository is licensed under the GNU LGPLv3 license.
+This repository is licensed under the Unlicense license.
 
 ## Tests
 
@@ -36,6 +36,8 @@ npm run test
 ## Website
 
 https://davitshirkhanyan.github.io/Professional-README-Generator
+
+![Professional-README-Generator](https://user-images.githubusercontent.com/74809116/107938175-cf7fa480-6f39-11eb-9fb7-e8299bebf731.gif)
 
 ## Contribution
 
