@@ -1,6 +1,6 @@
 
 # Professional README Generator
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Badge for GitHub](https://img.shields.io/github/languages/top/davitshirkhanyan/Professional-README-Generator?style=flat&logo=appveyor)](https://davitshirkhanyan.github.io/Professional-README-Generator)
 
 
@@ -12,8 +12,9 @@ A node.js command-line application that dynamically generates a professional REA
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
 * [Tests](#tests)
+* [Website](#website)
+* [Contribution](#contribution)
 * [Questions](#questions)
     
 ## Installation
@@ -26,7 +27,7 @@ Run the following command and answer the prompted questions: node index
 
 ## License
 
-This repository is licensed under the Unlicense license.
+This repository is licensed under the Apache 2.0 license.
 
 ## Tests
 
@@ -36,9 +37,6 @@ npm run test
 ## Website
 
 https://davitshirkhanyan.github.io/Professional-README-Generator
-
-![ggh](https://user-images.githubusercontent.com/74809116/107941143-1d96a700-6f3e-11eb-806e-883499db7589.gif)
-
 
 ## Contribution
 
