@@ -13,7 +13,7 @@ const questions = [
             if (githubInput) {
                 return true;
             } else {
-                console.log ('Please, enter your Github Username!');
+                console.log ('Please enter your Github Username!');
                 return false;
             }
         }
@@ -28,11 +28,26 @@ const questions = [
             if (githubRepository) {
                 return true;
             } else {
-                console.log ('Please, enter your Github Repository Name!');
+                console.log ('Please enter your Github Repository Name!');
                 return false;
             }
         }
     },
 
-    
+    // Title of the Project
+    {
+        type: 'input',
+        name: 'title',
+        message: 'What is the name of your project? (Required)',
+        validate: projectTitle => {
+            if (projectTitle) {
+                return true;
+            } else {
+                console.log ('Please enter your project title!');
+                return false;
+            }
+        } 
+    }
+
+
 ];
