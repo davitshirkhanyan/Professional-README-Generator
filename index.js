@@ -72,7 +72,11 @@ const questions = [
         default: 'npm i'
     },
 
-
-
+    // Project Usage
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Enter your project instructions and examples'
+    },
 
 ];
